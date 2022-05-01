@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing:  border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4px;
+}
+
+body {
+    background: linear-gradient(145deg, #6441A5, #2a0845);
+    height: 100vh;
+}
+.container {
+    background-color: white;
+    width: 450px;
+    padding: 50px 40px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.lbl {
+    font-size: 16px;
+    color: #1b1b1b;
+    font-weight: 400;
+}
+.val {
+    color: #1b1b1b;
+    font-size: 18px;
+}
+.input-box {
+    background-color: #cdccfd;
+    color: #6441A5;
+    padding: 5px;
+}
+
+#bill {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    text-align: right;
+    color: #6441A5;
+}
+hr {
+    border: 1.5px solid;
+    border-image: linear-gradient(90deg, rgba(60,74,83,.00),#6641A5 50%, rgba(60,74,83,.00)) 4;
+    border-bottom: 0;
+    
+}
+
+/*retirar as setas do input number*/
+#bill::-webkit-outer-spin-button,
+#bill::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="range"]:not(:last-child) {
+    margin-bottom: 5px;
+}
+section:not(:last-child) {
+    margin-bottom: 40px;
+}
+section:not(:first-child) {
+    margin-top: 40px;
+}
+section:last-child {
+    background-color: #cdccfd;
+    padding: 10px;
+    border-radius: 4px;
+}
+section:last-child .val,section:last-child .lbl {
+    color: #4c4af4;
+}
